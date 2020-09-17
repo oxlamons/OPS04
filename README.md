@@ -29,7 +29,7 @@ Create the appropriate subdirectory within the user plugins directory for the Vs
 
  Finally, build the binary and move it into your user Terraform plugins directory. This allows you to sideload and test your custom providers.
 
-``` go build -o terraform-provider-hashicups  ```
+``` go build -o terraform-provider-vscale  ```
 
   Then, move the binary to the appropriate subdirectory within your user plugins directory, replacing [OS_ARCH] with your system's OS_ARCH.
 
@@ -40,8 +40,8 @@ Add the following to your main.tf  file. This is required for Terraform 0.13+.
  ``` sh
   terraform {
   required_providers {
-    hashicups = {
-      versions = ["0.1"]
+    vscale = {
+      versions = "0.1"
       source = "vscale.com/edu/vscale"
     }
   }
