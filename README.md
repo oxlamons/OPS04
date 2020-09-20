@@ -7,7 +7,7 @@
 Create folders
   - mkdir -p $GOPATH/src/github.com/terraform-providers;
   - cd $GOPATH/src/github.com/terraform-providers
-  - gir clone https://github.com/burkostya/terraform-provider-vscale.git
+  - git clone https://github.com/burkostya/terraform-provider-vscale.git
 
   #### Important . Change owner !!
   ```sh sudo chown -R root:root ./go ```
